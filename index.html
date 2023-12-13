@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nova+Square&family=Outfit:wght@100;200;400;700&family=Overpass:wght@400;700&family=Roboto+Condensed:wght@100;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Rating state start -->
+  <div class="container intro">
+    <div class="header">
+      <div class="star">
+        <i class="fas fa-star"></i>
+      </div>
+    </div>
+    <div class="how"><h1>How did we do?</h1></div>
+    <div class="question">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</div>
+    <div class="stars">
+      <form action="">
+        <div class="star-inline">
+        <div>
+          <input class="star star-5" id="star-5" type="radio" name="star" />
+          <label class="star star-5" for="star-5">5</label>
+        </div>
+        <div>
+          <input class="star star-4" id="star-4" type="radio" name="star" />
+          <label class="star star-4" for="star-4">4</label>
+        </div>
+        <div>
+          <input class="star star-3" id="star-3" type="radio" name="star" />
+          <label class="star star-3" for="star-3">3</label>
+        </div>
+        <div>
+          <input class="star star-2" id="star-2" type="radio" name="star" />
+          <label class="star star-2" for="star-2">2</label>
+        </div>
+        <div>
+          <input class="star star-1" id="star-1" type="radio" name="star" />
+          <label class="star star-1" for="star-1">1</label>
+        </div>
+      </div>
+    </form>
+    </div>
+    <div class="button" id="submit">
+      Submit
+    </div>
+  </div>
+
+  <div class="container thank-you">
+    <div class="thank-you-img">
+      <img src="images/illustration-thank-you.svg" alt="">
+    </div>
+    <div class="selected-rating">
+      <div class="rating-text">You selected <span class="rating"></span> out of 5</div>
+    </div>
+  
+    <div>
+      <h1>Thank you!</h1>
+    </div>
+  
+    <div>
+      <p>We appreciate you taking the time to give a rating. If you ever need more support,
+      don’t hesitate to get in touch!
+      </p>
+    </div>
+  
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

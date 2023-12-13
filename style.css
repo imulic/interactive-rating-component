@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+    --color-primary-50: hsl(25, 97%, 53%);
+    --color-neutral-50: hsl(0, 0%, 100%);
+    --color-neutral-100: hsl(217, 12%, 63%);
+    --color-neutral-200: hsl(216, 12%, 54%);
+    --color-neutral-300: hsl(213, 19%, 18%);
+    --color-neutral-400: hsl(216, 12%, 8%);
+
+    --margin-base: 40px;
+}
+
+.intro {
+    display: block;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background: black;
+    color: var(--color-neutral-50);
+}
+
+p {
+    font-size: 15px;
+}
+
+input.star {
+    display: none;
+}
+
+label.star {
+    float: right;
+    padding: 10px;
+    font-size: 1.5em;
+    color: #444;
+    transition: all 0.2s;
+    margin-right: 9px;
+    margin-left: 14px;
+  }
+
+input.star:checked ~ label.star {
+    background-color: var(--color-primary-50);
+    color: var(--color-neutral-50);
+}
+
+.container {
+    background: linear-gradient(to bottom, var(--color-neutral-300), var(--color-neutral-400) );
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    padding: var(--margin-base);
+    gap: var(--margin-base);
+    justify-content: center;
+    justify-content: center;
+}
+
+.header > .star { 
+    color: var(--color-primary-50);
+}
+
+.star {
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 1.5em;
+    background-color: var(--color-neutral-300);
+    height: 1.5em;
+    width: 1.5em;
+    text-align: center;
+    /* margin-bottom: 30px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.how {
+    color: var(--color-neutral-50);
+}
+
+.question {
+    color: var(--color-neutral-100)
+}
+
+.thank-you {
+    display: none;
+}
+
+.stars {
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-neutral-100)
+}
+
+.star-inline {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+label.star-1 {
+    margin-left: 0;
+}
+
+label.star-5 {
+    margin-right: 0;
+}
+
+.stars label.star:hover {
+    background-color: var(--color-neutral-200);
+    color: var(--color-neutral-50);
+    transition: all 0.25s ease;
+}
+
+.button {
+    background-color: var(--color-primary-50);
+    color: var(--color-neutral-50);
+    border: none;
+    border-radius: 30px;
+    padding: 15px;
+    font-size: 1em;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.button:hover {
+    background-color: var(--color-neutral-50);
+    color: var(--color-primary-50);
+    transition: all 0.25s ease;
+}
+
+.thank-you-img {
+    text-align: center;
+}
+
+.selected-rating {
+    
+    display: flex;
+    justify-content: center;
+}
+
+.rating-text {
+    width: 50%;
+    background-color: var(--color-neutral-300);
+    color: var(--color-primary-50);
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.thank-you h1 {
+    text-align: center;
+}
+
+.thank-you p {
+    text-align: center;
+    color: var(--color-neutral-100);
+    line-height: 1.5em;
+}
+
